@@ -1,0 +1,11 @@
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+for i, row in enumerate(matrix):
+    print(f"Row {i+1} Sum:", sum(row))
+
+for j in range(len(matrix[0])):
+    print(f"Column {j+1} Sum:", sum(matrix[i][j] for i in range(len(matrix))))
+
+diag1 = sum(matrix[i][i] for i in range(len(matrix)))
+diag2 = sum(matrix[i][len(matrix)-1-i] for i in range(len(matrix)))
+print("Diagonal 1 Sum:", diag1)
+print("Diagonal 2 Sum:", diag2)

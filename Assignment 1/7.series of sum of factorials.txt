@@ -1,0 +1,9 @@
+import math
+def special_series(n):
+    total = 0
+    curr_sum = 0
+    for i in range(1, n+1):
+        curr_sum += i
+        total += math.factorial(curr_sum)
+    return total
+print(special_series(3))

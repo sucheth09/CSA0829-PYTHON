@@ -1,0 +1,4 @@
+text = "Ball is round. Bat is big. Apple is red. Book is open."
+sentences = text.split('.')
+count = sum(1 for s in sentences if s.strip().startswith('B'))
+print("Sentences starting with B:", count)

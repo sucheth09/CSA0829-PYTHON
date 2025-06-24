@@ -1,0 +1,10 @@
+def is_tech_number(num):
+    s = str(num)
+    if len(s) % 2 == 0:
+        half = len(s) // 2
+        first = int(s[:half])
+        second = int(s[half:])
+        return (first + second) ** 2 == num
+    return False
+
+print(is_tech_number(2025))  # True
